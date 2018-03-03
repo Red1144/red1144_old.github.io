@@ -1,193 +1,39 @@
-<!DOCTYPE HTML>
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <style type="text/css">
-	@import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css);
-	@import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-jp.css);
-	body {
-	  font-family: SpoqaHanSans-kr;
-	  font-size:1em;
-	  min-width:360px;
-	  color: #222222;
-	  margin:0 0 0 0;
-	  text-align: center;
-	  font-weight:200;
-	   	 }
-	.top-bar {
-		position:relative;
-		background-color:#616161;
-	   	width:100%;
-	   	height:50px;
-	   	margin-left:auto;
-	    margin-right:auto;
-	   	}
-	 #idoc-text {
-	   text-align:center;
-	   color:#ffffff;
-	   font-weight:200;
-	   font-size:1.25em;
-	   line-height:50px;
-     }
-	 .main-text {
-		width: 100%;
-		font-size: 1.8em;
-		font-weight: 600;
-		color: #222222;
-		font-family: SpoqaHanSans;
-		margin: 24px 0 0 0;
-	}
-	.main-text2 {
-		width: 100%;
-		font-size: 3em;
-		font-weight: 100;
-		font-family: SpoqaHanSans;
-		margin: 8px 0 0 0;
-	}
-	.main-text3 {
-		width: 100%;
-		font-size: 1em;
-		font-weight: 100;
-		font-family: SpoqaHanSans;
-		margin: 8px 0 0 0;
-	}
-	.img {
-		width: 100%;
-		object-fit: contain;
-	}
-	.img-small {
-		width: 27%;
-		object-fit: contain;
-	}
-	.line-text {
-		width: 100%;
-		font-family: SpoqaHanSans;
-		font-size: 1.2em;
-		font-weight: 100;
-		line-height: 1.5;
-		margin: 8px 0 0 0;
-	}
-	.title {
-		width: 100%;
-		font-family: SpoqaHanSans;
-		font-size: 1.5em;
-		font-weight: 800;
-		margin: 32px 0 32px 0;
-	}
-	.iphone {
-		width: 100%;
-		margin: 32px 0 0 0;
-		display:flex;
-	}
+---
+layout: default
+current: home
+class: 'home-template'
+navigation: True
+---
 
-	.iphone-left-area{
-		width:33%;
-	}
-	.iphone-img{
-		width:34%;
-	}
-	.iphone-right-area{
-		width:33%;
-	}
-	.iphone-title{
-		width:100%;
-		margin:65% 0 0 20%;
-		font-size:1em;
-		font-weight:600;
-		text-align:left;
-		float:left;
-	}
-	.iphone-price{
-		width:100%;
-		margin:2% 0 0 20%;
-		font-size:1.25em;
-		text-align:left;
-		float:left;
-	}
-	}
-	</style>
-</head>
-<title>아이폰 수리는 iDoc</title>
+<!-- < default -->
+<!-- The tag above means: insert everything in this file
+into the {body} of the default.hbs template -->
 
-<body>
-<div class="top-bar">
-    <div id="idoc-text"> iDoc</div>
-    <div class="textbox">
-        <div class="main-text">찾아가는 아이폰 수리</div>
-        <div class="main-text2">누구보다 빠르게</div>
-        <div class="img">
-            <img src="img/fix-img.png"
-                 srcset="img/fix-img@2x.png 2x,
-					 img/fix-img@3x.png 3x"
-                 class="img">
+<!-- The big featured header, it uses blog cover image as a BG if available -->
+<header class="site-header outer {% if page.cover or site.cover %}" style="background-image:  url({{ site.baseurl }}{% if page.cover %}{{ page.cover }}{% elsif site.cover %}{{ site.cover }}{% endif %}) {% else %}no-cover{% endif %}">
+    <div class="inner">
+        <div class="site-header-content">
+            <h1 class="site-title">
+                {% if site.logo %}
+                    <img class="site-logo" src="{{ site.baseurl }}{{ site.logo }}" alt="{{ site.title }}"/>
+                {% else %}
+                    {{ site.title }}
+                {% endif %}
+            </h1>
+            <h2 class="site-description">{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}</h2>
         </div>
-        <div class="line-text">시간이 없어서 깨진 상태로 사용 중이라면,<br>
-            점심 시간을 쪼개 AS센터를 가야한다면,<br>AS센터가 너무 멀다면, <br><br>답은  iDoc 입니다.</div>
-        <div class="title">서비스비용</div>
+        {% include site-nav.html %}
+    </div>
+</header>
 
-        <!--iphone7 -->
-        <div class="iphone">
-            <div class="iphone-left-area">
-                <div class="iphone-title">iPhone 7</div>
-                <div class="iphone-price">₩120,000</div>
-            </div>
-            <div class="iphone-img"><img src="img/iphone-7-gallery-6-2016.png"
-                                         srcset="img/iphone-7-gallery-6-2016@2x.png 2x,
-					 img/iphone-7-gallery-6-2016@3x.png 3x"
-                                         class="iphone-7-gallery-6-2016"></div>
-            <div class="iphone-right-area">
-                <div class="iphone-title">iPhone 7 Plus</div>
-                <div class="iphone-price">₩140,000</div>
-            </div>
+<!-- The main content area -->
+<main id="site-main" class="site-main outer" role="main">
+    <div class="inner">
+
+        <div class="post-feed">
+            <!-- The tag below includes the markup for each post - partials/post-card.hbs -->
+            {%  include post-card.html %}
         </div>
 
-        <!--iphone6s -->
-        <div class="iphone">
-            <div class="iphone-left-area">
-                <div class="iphone-title">iPhone 6s</div>
-                <div class="iphone-price">₩90,000</div>
-            </div>
-            <div class="iphone-img"><img src="img/apple-iphone-6-splus-hero-cc-003.png"
-                                         srcset="img/apple-iphone-6-splus-hero-cc-003@2x.png 2x,
-					 img/apple-iphone-6-splus-hero-cc-003@3x.png 3x"
-                                         class="apple-iphone-6-splus-hero-cc-003"></div>
-            <div class="iphone-right-area">
-                <div class="iphone-title">iPhone 6s Plus</div>
-                <div class="iphone-price">₩110,000</div>
-            </div>
-        </div>
-
-        <!--iphone6 -->
-        <div class="iphone">
-            <div class="iphone-left-area">
-                <div class="iphone-title">iPhone 6</div>
-                <div class="iphone-price">₩90,000</div>
-            </div>
-            <div class="iphone-img"><img src="img/apple-iphone-6-hero-cc-003.png"
-                                         srcset="img/apple-iphone-6-hero-cc-003@2x.png 2x,
-					 img/apple-iphone-6-hero-cc-003@3x.png 3x"
-                                         class="apple-iphone-6-hero-cc-003"></div>
-            <div class="iphone-right-area">
-                <div class="iphone-title">iPhone 6 Plus</div>
-                <div class="iphone-price">₩90,000</div>
-            </div>
-        </div>
-        <div class="title">특별 서비스</div>
-        <center><img src="img/icon-certificate.svg" class="img-small"><br><br>
-            정품 액정이 아닐 경우 100% 환불<br><br><br><br>
-            <center><img src="img/icon-film.svg" class="img-small"><br><br>
-                아이폰을 보호하는 필름과 케이스 증정
-                <div class="line-text3"> </div>
-                <br><br>
-                <a href="tel:010-1234-1234">
-                    <div class="img">
-                        <img src="img/1-1.png" srcset="img/1-1@2x.png 2x, img/1-1@3x.png 3x">
-                    </div>
-                </a>
-                <a href="https://pf.kakao.com/_Ccexhd" target=_blank>
-                    <div class="img">
-                        <img src="img/7.png" srcset="img/7@2x.png 2x, img/7@3x.png 3x">
-                    </div>
-                </a>
-                <br><br>
-</body>
+    </div>
+</main>
