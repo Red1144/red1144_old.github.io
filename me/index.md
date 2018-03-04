@@ -1,5 +1,5 @@
 ---
-layout: Red The Dragon
+layout: me
 title: I am Red
 ---
 
