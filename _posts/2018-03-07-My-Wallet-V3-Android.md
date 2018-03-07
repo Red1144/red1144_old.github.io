@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "My Wallet V3 안드로이드(​프론트엔드)"
-tags: 180307 원장지갑 not-tried
+tags: wallet not-tried
 ---
 
 ## My Wallet V3 안드로이드

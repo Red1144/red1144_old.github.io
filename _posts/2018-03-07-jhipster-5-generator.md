@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "JHipster 최신 버전으로 프로젝트 생성하기"
-tags: 180307 인터페이스 trying
+tags: interface trying
 ---
 
 ## JHipster 최신 버전으로 프로젝트 생성하기
