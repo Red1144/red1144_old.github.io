@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "My Wallet V3 안드로이드(​프론트엔드)"
+title: "My Wallet V3 Android"
 tags: wallet not-tried
 ---
 

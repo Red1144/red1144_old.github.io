@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "jhipster 프로젝트를 j 프로젝트에 import 해보기"
+title: "Jhipster Importing"
 tags: interface not-finished
 ---
 

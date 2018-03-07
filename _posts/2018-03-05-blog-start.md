@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "블로그를 시작해볼까 합니다"
+title: "Blog Start"
 tags: life study
 ---
 

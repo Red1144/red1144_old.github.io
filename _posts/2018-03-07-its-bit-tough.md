@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "이거 조금 까다롭네"
+title: "Its Bit Tough"
 tags: life
 ---
 

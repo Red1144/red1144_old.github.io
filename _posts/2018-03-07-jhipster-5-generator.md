@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "JHipster 최신 버전으로 프로젝트 생성하기"
+title: "Jhipster 5 Generator"
 tags: interface trying
 ---
 
