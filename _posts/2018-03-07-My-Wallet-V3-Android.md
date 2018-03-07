@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "My Wallet V3 Android"
+title: "My Wallet V3 Android 연습"
 tags: wallet not-tried
 ---
 

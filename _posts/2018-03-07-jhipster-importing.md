@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "Jhipster Importing"
+title: "Jhipster 임포트"
 tags: interface not-finished
 ---
 

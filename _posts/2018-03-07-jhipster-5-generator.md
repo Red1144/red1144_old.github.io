@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "Jhipster 5 Generator"
+title: "JHipster 최신 버전 쓰기"
 tags: interface trying
 ---
 
