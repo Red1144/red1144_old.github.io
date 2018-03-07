@@ -3,7 +3,9 @@ layout: me
 title: I am Red
 ---
 
-Hi, I am Red. I am a web deveoper and love playing computer games.
+## Hi, I am Red.
+
+I am a web deveoper and love playing computer games.
 
 Playing...
 

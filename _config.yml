@@ -1,11 +1,11 @@
-permalink: /windows-95
-url: red1144.github.io
+permalink: /:year:month:day/:title
+url: https://red1144.github.io
 baseurl: /project
 
 # variables
-name: Ambiguity
-description: It is ambiguous.
-google_verification: ambiguity
+name: Red's Workplace
+description: Red1144 is awesome.
+google_verification: whatever
 
 
 # File management
